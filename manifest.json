@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "banan.banansms-monitor",
+  "name": "BananSMS Monitor",
+  "version": "0.1.0",
+  "author": "banan",
+  "license": "MIT",
+  "description": "Read-only monitoring for SerwerSMS: service limits, delivery reports, alerts and encrypted local storage.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "BananSMS Monitor",
+    "description": "Encrypted, read-only monitoring for SerwerSMS.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "demo": false
+    },
+    "schema": [
+      {
+        "key": "demo",
+        "type": "boolean",
+        "label": "Fictional statistics without account access or network requests",
+        "defaultValue": false
+      }
+    ]
+  }
+}
